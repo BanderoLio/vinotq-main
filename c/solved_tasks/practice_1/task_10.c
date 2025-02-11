@@ -6,7 +6,7 @@
 
 int main()
 {
-    char temperature[20];
+    char temperature[20]; // еще был не в курсе того, что и с int и %d в scanf все сработает)
 
     printf("Hi!\nPlease enter corpus temperature of satellite: ");
     fgets(temperature, sizeof(temperature), stdin);
