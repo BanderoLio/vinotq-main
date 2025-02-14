@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Item
-{
+typedef struct {
     char name[30];
     int ammount;
     float price;
-};
+} Item;
 
 int main()
 {
@@ -14,7 +13,7 @@ int main()
     printf("Hi!\nPlease enter ammount of items: ");
     scanf("%d", &n);
 
-    struct Item items[n];
+    Item* items = malloc(sizeof(Item) * n);
 
     for (int i = 0; i < n; i++)
     {
@@ -25,4 +24,5 @@ int main()
     {
         printf("Name: %s, Ammount of items: %d, Price: %.2f\n", items[i].name, items[i].ammount, items[i].price);
     }
+    free(items);
 }
