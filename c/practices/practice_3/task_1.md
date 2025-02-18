@@ -58,7 +58,7 @@ int main() {
 1. Где будет создана `stack_point`?
 
 #### Ход работы:
-![alt text](pictures_task_1/image.png)
+![alt text](pictures_task_1/image.png)  
 **Рисунок 1**. Результат компиляции и запуска программы
 
 
